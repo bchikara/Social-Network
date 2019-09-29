@@ -1,0 +1,106 @@
+<app-header></app-header>
+<div class="container">
+
+    <!-- Timeline
+    ================================================= -->
+    <div class="timeline">
+      <div class="timeline-cover">
+
+        <!--Timeline Menu for Large Screens-->
+        <div class="timeline-nav-bar hidden-sm hidden-xs">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="profile-info">
+                <img src="http://placehold.it/300x300" alt="" class="img-responsive profile-photo" />
+                <h3>Bhupesh Chikara</h3>
+                <p class="text-muted">Angular Developer</p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <ul class="list-inline profile-menu">
+                <li><a routerLink="/timeline/post">Timeline</a></li>
+                <li><a routerLink="/timeline/about" class="active">About</a></li>
+                <li><a routerLink="/timeline/album">Album</a></li>
+                <li><a routerLink="/timeline/friends">Friends</a></li>
+              </ul>
+              <ul class="follow-me list-inline">
+                <li>1,299 people following her</li>
+                <li><button class="btn-primary">Add Friend</button></li>
+              </ul>
+            </div>
+          </div>
+        </div><!--Timeline Menu for Large Screens End-->
+
+        <!--Timeline Menu for Small Screens-->
+        <div class="navbar-mobile hidden-lg hidden-md">
+          <div class="profile-info">
+            <img src="http://placehold.it/300x300" alt="" class="img-responsive profile-photo" />
+            <h4>Bhupesh Chikara</h4>
+            <p class="text-muted">Angular Developer</p>
+          </div>
+          <div class="mobile-menu">
+            <ul class="list-inline">
+              <li><a routerLink="/timline/post">Timeline</a></li>
+              <li><a routerLink="/timeline/about" class="active">About</a></li>
+              <li><a routerLink="/timeline/album">Album</a></li>
+              <li><a routerLink="/timeline/friends">Friends</a></li>
+            </ul>
+            <button class="btn-primary">Add Friend</button>
+          </div>
+        </div><!--Timeline Menu for Small Screens End-->
+
+      </div>
+      <div id="page-contents">
+        <div class="row">
+          <div class="col-md-3">
+            
+            <!--Edit Profile Menu-->
+            <ul class="edit-menu">
+                <li class="active"><i class="icon ion-ios-information-outline"></i><a routerLink="/profile/info">Basic Information</a></li>
+                <li><i class="icon ion-ios-briefcase-outline"></i><a routerLink="/profile/work">Education and Work</a></li>
+                <li><i class="icon ion-ios-heart-outline"></i><a routerLink="/profile/interest">My Interests</a></li>
+              <li><i class="icon ion-ios-settings"></i><a routerLink="/profile/setting">Account Settings</a></li>
+                <li><i class="icon ion-ios-locked-outline"></i><a routerLink="/profile/change-password">Change Password</a></li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+
+         <router-outlet></router-outlet>
+
+          </div>
+          <div class="col-md-2 static">
+            
+            <!--Sticky Timeline Activity Sidebar-->
+            <div id="sticky-sidebar">
+              <h4 class="grey">Bhupesh's activity</h4>
+              <div class="feed-item">
+                <div class="live-activity">
+                  <p><a routerLink="#" class="profile-link">Bhupesh</a> Commended on a Photo</p>
+                  <p class="text-muted">5 mins ago</p>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="live-activity">
+                  <p><a routerLink="#" class="profile-link">Bhupesh</a> Has posted a photo</p>
+                  <p class="text-muted">an hour ago</p>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="live-activity">
+                  <p><a routerLink="#" class="profile-link">Bhupesh</a> Liked her friend's post</p>
+                  <p class="text-muted">4 hours ago</p>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="live-activity">
+                  <p><a routerLink="#" class="profile-link">Bhupesh</a> has shared an album</p>
+                  <p class="text-muted">a day ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>  

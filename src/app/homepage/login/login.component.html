@@ -1,0 +1,20 @@
+<div class="sign-up-form">
+    <a routerLink="/" class="logo"><img width="250px" src="assets/images/logo.png" alt="Cloudy"/></a>
+    <h2 class="text-white">Find My Friends</h2>
+    <div class="line-divider"></div>
+    <div class="form-wrapper">
+        <p class="signup-text">Signin now and meet awesome people around the world</p>
+        <form (ngSubmit)="Login(f)" #f="ngForm">
+                <fieldset class="form-group">
+                    <input type="email" name="email" ngModel class="form-control" id="example-email" placeholder="Enter email">
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="password" name="password" ngModel class="form-control" id="example-password" placeholder="Enter a password">
+                </fieldset>
+                <p>By signning in you agree to the terms</p>
+                <button type="submit" class="btn-secondary">Signin</button>
+            </form>
+    </div>
+    <a routerLink="" (click)="register()">Create an account?</a>
+    <img class="form-shadow" src="assets/images/bottom-shadow.png" alt="" />
+</div>

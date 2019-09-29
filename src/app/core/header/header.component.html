@@ -1,0 +1,65 @@
+<header id="header">
+  <nav class="navbar navbar-default navbar-fixed-top menu">
+    <div class="container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <li>
+         <a class="navbar-brand" routerLink="/"><img width="100px" src="assets/images/logo.png" alt="logo" /></a>
+        </li>
+        </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right main-menu">
+              <li class="dropdown">
+                <a class="dropdown-toggle" routerLink="/" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu newsfeed-home">
+                  <li><a routerLink="/newsfeed/post">Newsfeed</a></li>
+                  <li><a routerLink="/newsfeed/nearby">Poeple Nearly</a></li>
+                  <li><a routerLink="/newsfeed/friends">My friends</a></li>
+                  <li><a routerLink="/newsfeed/chatroom">Chatroom</a></li>
+                  <li><a routerLink="/newsfeed/image">Images</a></li>
+                  <li><a routerLink="/newsfeed/video">Videos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu login">
+                  <li><a routerLink="/timeline/post">Timeline</a></li>
+                  <li><a routerLink="/timeline/about">Timeline About</a></li>
+                  <li><a routerLink="/timeline/album">Timeline Album</a></li>
+                  <li><a routerLink="/timeline/friends">Timeline Friends</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+                <ul class="dropdown-menu page-list">                  
+                  <li><a routerLink="/profile/info">Basic Info</a></li>
+                  <li><a routerLink="/profile/work">Work</a></li>
+                  <li><a routerLink="/profile/interest">Interests</a></li>
+                  <li><a routerLink="/profile/setting">Account Settings</a></li>
+                  <li><a routerLink="/profile/change-password">Change Password</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a routerLink="/contact">Contact</a></li>
+            </ul>
+        <form class="navbar-form navbar-right hidden-sm">
+          <div class="form-group">
+            <i class="icon ion-android-search"></i>
+            <input type="text" class="form-control" placeholder="Search friends, photos, videos">
+          </div>
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</header>
